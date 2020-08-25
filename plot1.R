@@ -1,3 +1,4 @@
+# 2020.08.25
 
 # The GAP between the course materials and assignments is frustrating
 
