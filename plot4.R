@@ -1,7 +1,9 @@
+# 2020.08.25
+# written by rmemmel
 # packages we need
         library(lubridate)
 
-# read in the data
+# read in the data, 
 # using the “Individual household electric power consumption Data Set”
         power_data<-read.table("household_power_consumption.txt",
                        header=T, sep=";", na.strings="?")
