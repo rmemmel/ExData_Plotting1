@@ -1,7 +1,9 @@
+# 2020.08.25
 # packages we need
         library(lubridate)
 
 # read in the data
+#written by rmemmel
 # using the “Individual household electric power consumption Data Set”
         power_data<-read.table("household_power_consumption.txt",
                        header=T, sep=";", na.strings="?")
@@ -21,14 +23,14 @@
 # Size and name the chart
         png("plot3.png", width=480, height=480)
 
+# 2020.08.25
 # Build the chart
         with(mydata, plot(dateTime, Sub_metering_1, 
                   type="l", 
                   xlab="Day", 
-                  ylab="Energy sub metering")
-     
-)
-#Add the sumetering lines
+                  ylab="Energy sub metering"))
+        
+#Add the sub metering lines
         lines(mydata$dateTime, mydata$Sub_metering_2,type="l", col= "red")
         lines(mydata$dateTime, mydata$Sub_metering_3,type="l", col= "blue")
 
