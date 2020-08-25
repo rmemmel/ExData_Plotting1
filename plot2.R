@@ -1,7 +1,8 @@
+# 2020.08.25
 # packages we need
         library(lubridate)
 
-# read in the data
+# read in the data, written by rmemmel
 # using the “Individual household electric power consumption Data Set”
         power_data<-read.table("household_power_consumption.txt",
                        header=T, sep=";", na.strings="?")
@@ -25,8 +26,8 @@
         with(mydata, plot(dateTime, Global_active_power, 
                           type="l", 
                           xlab="Day", 
-                          ylab="Global Active Power (kilowatts)")
-             )
+                          ylab="Global Active Power (kilowatts)"))
+        
 
 # close the display     
 dev.off()
